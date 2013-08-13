@@ -1,0 +1,196 @@
+% This template was originally by R. Jacob Vogelstein
+% Updated on March 1, 2010 by Noah J. Cowan
+% Updated by Isabel Isabel Rodr’guez Barraquer in 2012
+
+\documentclass[12pt,oneside,final]{thesis}
+
+\usepackage{cite}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{fixltx2e}
+\usepackage{array}
+\usepackage{chapterbib}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{pdflscape}
+%\usepackage{table}
+%\usepackage{setspace}
+%\usepackage{currvita}
+
+% wrapfig is fragile: use sparingly
+\usepackage{wrapfig} 
+%\usepackage{times}  % Use this for ugly fonts
+
+
+\usepackage{fancyhdr}    % Use nice looking headers along with the required footer page numbers   
+%\usepackage[hypertex]{hyperref}
+
+%Define the header/footer style
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15pt}
+\lhead{\leftmark}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{% Redefine ``plain'' style for chapter boundaries
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+
+%\tolerance=10000
+
+%\makeglossary % enable the glossary
+
+\begin{document}
+
+\title{MY TITLE}
+\author{MY NAME}
+\degreemonth{MONTH}
+\degreeyear{YEAR} 
+\dissertation
+\doctorphilosophy
+\copyrightnotice
+%
+
+
+%add your chapters, best way is to have separate TeX files for each chapter
+\include{chapter0}
+\include{chapter1}
+%\part{Name of Section}
+%\include{chapter2}
+%\include{chapter4}
+%\include{chapter3}
+%\part{Name of Next Section}
+%\include{chapter5}
+%\include{chapter6}
+%\include{chapter7}
+%\part{Appendices}
+%\appendix{}
+%\include{Supp_methods}
+%\include{Supp_ch2}
+%\include{Supp_cha3}
+%\include{Supp_ch5}
+%
+% REFERENCES
+%
+% if you use BIBTEX
+%\bibliographystyle{plain}
+%\bibliography{bibtex2}
+%
+
+
+%\fancyhf{}
+%% this hack is to add page number on the CV section
+\clearpage
+\clearpage
+\fancyhead{}
+\ssp
+\addcontentsline{toc}{chapter}{Curriculum vitae}
+\section*{Curriculum Vitae}
+\noindent
+\textbf{My Name}\\
+Street Address\\
+Baltimore MD, 21205\\
+\emph{me@jhsph.edu}
+% \hline
+
+
+  \subsection*{Education}
+	\begin{tabular*}{6in}{l@{\extracolsep{\fill}}l}
+	    2007- &  \textbf{Johns Hopkins School of Public Health, Baltimore}\\
+	  &  Ph. D. Epidemiology, \textit{- expected August 2012}\\
+	  & M.H.S. Biostatistics, \textit{- expected August 2012}\\  
+	19xx-20xx &  \textbf{SOme University}\\
+	&  Degree\\
+	& Date of graduation: xx/20xx\\
+	   \end{tabular*}
+
+
+  \subsection*{Professional Experience}
+  \subsubsection*{Research}
+  \noindent
+\begin{tabular*}{6in}{l@{\extracolsep{\fill}}l}
+ 06/08- & \textbf{Johns Hopkins  School of Public Health, Baltimore}\\
+ & Department of epidemiology\\
+ & Graduate research assistant\\
+ 10/07-12/09 & \textbf{Johns Hopkins Center for Clinical Trials, Baltimore}\\
+ & SOme Project\\
+ & Research Assistant\\
+ 08/05-08/07 & \textbf{Some other place}\\
+ & \textbf{Some project}\\
+ & Co-investigator/ Research Assistant\\
+ 12/04-06/05 & \textbf{Some other place}\\
+ & Some project\\
+ & Research Assistant\\
+   \end{tabular*}
+ 
+  \subsubsection*{Teaching Experience}
+\begin{tabular*}{6in}{l@{\extracolsep{\fill}}l}
+\multicolumn{2} {l} {\textbf{Johns Hopkins Bloomberg School of Public Health, Baltimore}}\\
+2011 & Teacher assistant - Statistics in Public Health\\
+2011 & Teacher assistant - Advanced methods for the design and analysis\\
+& of cohort studies\\
+2009 & Methodological challenges in epidemiological research\\
+2009 & Teacher assistant - Epidemiologic methods 3\\
+\multicolumn{2} {l} { \textbf{some place}}\\
+2000-2004 & Teacher assistant, some department\\
+   \end{tabular*}
+
+ 
+  \subsection*{Publications}
+   \noindent 
+  My citation 1.
+    
+  \bigskip
+  \noindent
+My citation 2. 
+  
+  \bigskip
+  \noindent
+My citation 3. 
+  
+  \subsubsection*{Under review}
+  \noindent
+My citation 4. 
+   
+    \bigskip
+  \noindent
+My citation 5.   
+
+   \subsection*{Presentations and Abstracts}
+   \subsubsection*{Abstracts \textit{(first author only)}}
+    
+     \noindent
+     Authors. Title. Cartagena, Colombia, September 2012. 
+      
+         \bigskip
+       \noindent
+      Authors. Title. Conference, Location, Date
+                
+        
+
+ \subsection*{Professional Activities}
+ \begin{itemize}
+\item  Reviewer, \textit{Some Journal} Year
+ \item Reviewer, \textit{Another Journal} Year
+ \item Other things here
+ \end {itemize}
+
+ \subsection*{Awards}
+
+ \begin{itemize}
+  \item Award 1
+  \item Award 2
+\end {itemize}
+  
+  \section*{Languages}
+   \begin{itemize}
+  \item Language 1 - Native
+  \item Language 2 - High level speaking, reading and writing
+\end{itemize}
+
+%\end{vita}
+ 
+ \end{document}
