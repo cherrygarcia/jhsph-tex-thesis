@@ -1,1 +1,1 @@
-This is a tex template that meets the requirements for PhD Dissertations at the Johns Hopkins School of Public Health. This was passed onto me by a few people so feel free to fork it and make it better!
+This is a tex template that meets the requirements for PhD Dissertations at the Johns Hopkins School of Public Health. Feel free to fork it and make it better!
