@@ -254,7 +254,7 @@
 \def\fmsmallfont{\fontsize\@xiipt{14pt}\selectfont}
 
 \def\maketitle{
-{\dsp
+{\ssp
 \begin{alwayssingle}
     \let\footnotesize\small
     \let\footnoterule\relax
@@ -266,24 +266,29 @@
 % new rules 1998, title should be written in all caps
 % and centered within the left and right margins, doublespaced
 % approx 2in from the top of the page.
+% modified by KER 21 Jan 2014
+% title should be singlespaced.
+% 1 inch down should be "by" with the authors name on the next singlespaced line
+% 1.5 inches down from that should be "submitted..."
+% 0.5 inches down from "submitted..." should be "Baltimore..."
 
 %
    \vbox to \textheight{
-      \null
+%     \null
 %     \vfil \vskip 0.5in 
       \begin{center}
          {\large\bf \@title \par}
-         \vskip 1em
+         \vskip 1in
          {by \par}
-         \vskip 1em
+         % \vskip 1em
          \begin{tabular}[t]{c}
             {\large \@author}
          \end{tabular}\par
-         \vskip 6em 
+         \vskip 1.5in
   
          {\@thesistype\ submitted to The Johns Hopkins University in
           conformity with the requirements for the degree of \@degreetype.\par} 
-         \vskip 2em
+         \vskip 0.5in
          {Baltimore, Maryland\par}
          {\@degreemonth, \@degreeyear\par}
          \vskip 8em
